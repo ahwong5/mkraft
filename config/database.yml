@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: mkraft_production
-  username: mkraft
-  password: <%= ENV['MKRAFT_DATABASE_PASSWORD'] %>
+  database: mkraftdb_production
+  username: mkraftdb
+  password: <%= ENV['MKRAFTDB_DATABASE_PASSWORD'] %>

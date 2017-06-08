@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 
 gem "figaro"
 gem "fog-aws"
-gem 'aws-sdk'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -56,6 +56,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'aws-sdk'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

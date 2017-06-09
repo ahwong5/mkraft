@@ -12,8 +12,8 @@ attachment_config = {
   s3_protocol:    "https",
   s3_region:      ENV['AWS_REGION'],
   url:            ':s3_alias_url',
-  # s3_host_alias:  ENV['CDN_HOST'],
-  s3_host_name:   ENV['AWS_ENDPOINT'],
+  s3_host_alias:  ENV['CDN_HOST'],
+  # s3_host_name:   ENV['AWS_ENDPOINT'],
   bucket:         ENV['S3_BUCKET_NAME'],
 
   styles: {

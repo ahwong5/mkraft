@@ -6,7 +6,8 @@ if ENV['AWS_ACCESS_KEY_ID']
       :aws_access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :aws_secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     },
-    :fog_directory => ENV["S3_BUCKET_NAME"]
+    :fog_directory => ENV["S3_BUCKET_NAME"],
+    :s3_host_name => ENV["AWS_HOSTNAME"]
   )
 
   Spree::Image.attachment_definitions[:attachment].delete(:url)

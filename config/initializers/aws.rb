@@ -4,6 +4,7 @@ attachment_config = {
     access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
     secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
     bucket:            ENV['S3_BUCKET_NAME']
+
   },
 
   storage:        :s3,
@@ -12,6 +13,7 @@ attachment_config = {
   s3_region:      ENV['AWS_REGION'],
   url:            ':s3_alias_url',
   s3_host_alias:  ENV['CDN_HOST'],
+  s3_host_name:   ENV['AWS_ENDPOINT'],
   bucket:         ENV['S3_BUCKET_NAME'],
 
   styles: {
